@@ -14,16 +14,19 @@
             overflow: hidden;
         }
 
-        #interp {
+        #holder {
             position: fixed;
+            width: 100%;
+            display:flex;
+            justify-content: space-around;
+        }
+        #interp {
             z-index: 6;
         }
 
         #ping {
-            position: fixed;
-            right: 0;
             font-size: 30px;
-            padding: 20px;
+            /* padding: 20px; */
         }
 
     </style>
@@ -32,7 +35,7 @@
 
 <body>
     <div id="holder">
-        <button id="interp">Interpolate</button>
+        <button id="interp">Enable Interpolation</button>
         <div id="ping">0 ms</div>
     </div>
     <canvas id="game_canvas"></canvas>
