@@ -1,5 +1,3 @@
-import Enum from "./Enum.js";
-
 class Utils {
     static resizeCanvas(canvas) {
         canvas.width = window.innerWidth;
@@ -7,7 +5,4 @@ class Utils {
     }
 }
 
-const MessageTypes = new Enum(['JOIN', 'CONNECT', 'STATE']);
-
-export { MessageTypes };
 export default Utils;
