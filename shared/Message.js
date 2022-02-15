@@ -56,8 +56,8 @@ class Message {
     }
 }
 
-/** @type {{ JOIN: 0, CONNECT: 1, STATE: 2 }} */
-Message.type = new Enum(['JOIN', 'CONNECT', 'STATE']);
+/** @type {{ JOIN: 0, CONNECT: 1, STATE: 2, KEY: 3, MOUSE: 4 }} */
+Message.type = new Enum(['JOIN', 'CONNECT', 'STATE', 'KEY', 'MOUSE']);
 
 
 export default Message;
