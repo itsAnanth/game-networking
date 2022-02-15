@@ -29,6 +29,13 @@ class Player {
         this.xvel *= 0.85;//friction
         this.yvel *= 0.85;// friction
     }
+
+    serialize() {
+        return {
+            x: this.x,
+            y: this.y
+        }
+    }
 }
 
 
